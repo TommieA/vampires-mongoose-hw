@@ -1,7 +1,13 @@
 // 1. Require your node modules
-
+const express        = require('express');
+const app            = express();
+const bodyParser     = require('body-parser');
+const methodOverride = require('method-override')
+const mongoose       = require('mongoose');
+// require our db file
+require('./db/db');
 // 2. Require your model (and possibly your extra data source);
-
+const vampire_app    = require(populateVampires);
 // 3. Connect your database and collection name
 
 // 4. Open your mongoose connection
