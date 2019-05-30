@@ -6,11 +6,11 @@ const vampireSchema = new mongoose.Schema({
     eye_color: {type: String},
     dob: {type: Date},
     loves: [String],
-    Location: {type: String},
+    location: {type: String},
     gender: {type: String},
     victims: {type: Number, min: [0, 'Cannot have a negative number of victims']},
 });
 
 const Vampire = mongoose.model('Vampire', vampireSchema);
 
-module.exports = vampire;
+module.exports = Vampire;
